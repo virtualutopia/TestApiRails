@@ -10,13 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_29_151002) do
+ActiveRecord::Schema.define(version: 2020_05_29_195320) do
 
   create_table "articles", force: :cascade do |t|
     t.string "title"
     t.text "body"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "pokemons", force: :cascade do |t|
+    t.string "Name"
+    t.string "Type1"
+    t.string "Type2"
+    t.integer "Total"
+    t.integer "HP"
+    t.integer "Attack"
+    t.integer "Defense"
+    t.integer "SpDef"
+    t.integer "Speed"
+    t.integer "Generation"
+    t.boolean "Legendary"
   end
 
 end
