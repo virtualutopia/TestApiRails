@@ -31,10 +31,10 @@ require "rvm1/capistrano3"
 # require "capistrano/rbenv"
 # require "capistrano/chruby"
 require "capistrano/bundler"
-require "capistrano/rails/assets"
-# require "capistrano/rails/migrations"
+# require "capistrano/rails/assets"
+require "capistrano/rails/migrations"
 # require "capistrano/passenger"
-require "capistrano/rails"
+# require "capistrano/rails"
 require "capistrano/puma"
 install_plugin Capistrano::Puma
 install_plugin Capistrano::Puma::Nginx
