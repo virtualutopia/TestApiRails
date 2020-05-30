@@ -16,7 +16,8 @@ set :rails_env, "production"
 set :deploy_to, "/home/ubuntu/apps/#{app}"
 set :linked_dirs, %w{tmp/pids tmp/sockets log}
 set :linked_files, %w{config/database.yml}
-set :linked_files, %w{config/application.yml}
+# set :linked_files, %w{config/application.yml}
+set :linked_files, %w{config/master.key}
 
 # role-based syntax
 # ==================
