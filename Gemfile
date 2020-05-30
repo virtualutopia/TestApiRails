@@ -7,8 +7,6 @@ ruby '2.7.0'
 gem 'rails', '~> 5.2.4', '>= 5.2.4.3'
 # Use sqlite3 as the database for Active Record
 
-#Use Mysql2
-# gem 'mysql2'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -50,6 +48,11 @@ group :development do
   gem 'rvm1-capistrano3', require: false
   gem 'capistrano3-puma'
 
+  # use RSEPC for unit tests
+  gem 'rspec', '~> 3.9'
+  gem 'rspec-rails', '~> 4.0'
+
+  # for development use sqlite (it was not possible to install MySQL on local - old MacOS)
   gem 'sqlite3'
 end
 
