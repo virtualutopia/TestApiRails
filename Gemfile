@@ -6,7 +6,7 @@ ruby '2.7.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.4', '>= 5.2.4.3'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+
 #Use Mysql2
 # gem 'mysql2'
 # Use Puma as the app server
@@ -49,6 +49,8 @@ group :development do
   gem 'capistrano-bundler', '>= 1.1.0'
   gem 'rvm1-capistrano3', require: false
   gem 'capistrano3-puma'
+
+  gem 'sqlite3'
 end
 
 
@@ -56,3 +58,6 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
+group :production do
+  gem 'mysql2', '~> 0.5.2'
+end
