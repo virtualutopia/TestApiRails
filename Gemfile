@@ -21,8 +21,7 @@ gem 'puma', '~> 3.11'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
+
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
@@ -42,6 +41,14 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'faker', '~> 1.6', '>= 1.6.3'
   gem 'pry-byebug', '~> 3.4'
+
+  # Use Capistrano for deployment
+  # gem 'capistrano-rails', group: :development
+  gem 'capistrano-rails', '~> 1.4', require: false
+  gem 'capistrano', '~> 3.10', require: false
+  gem 'capistrano-bundler', '>= 1.1.0'
+  gem 'rvm1-capistrano3', require: false
+  gem 'capistrano3-puma'
 end
 
 
