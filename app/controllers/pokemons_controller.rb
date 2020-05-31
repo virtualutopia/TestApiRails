@@ -34,6 +34,10 @@ class PokemonsController < ApplicationController
         end
     end
 
+    def list
+        render json: {status: 'SUCCESS', message: 'Pokemon list printed'}, status: :ok
+    end
+
     private
     def pokemon_params
         params.permit(:Name, :Type1, :Type2, :Total, :HP, :Attack, :Defense, :SpDef, :Speed, :Generation, :Legendary)

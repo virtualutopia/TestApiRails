@@ -6,12 +6,12 @@
 
 ## CRUD functions
  That is how you may use each of the CRUD reqeusts:
-* GET Request:
+* GET 
 * * /pokemons
-
-    :list of all the pokemons table
+        
+        :list of all the pokemons table
     
-    /pokemons/#id   :details of pokemon with this id
+        /pokemons/#id   :details of pokemon with this id
 
 * POST
 * * /pokemons
@@ -42,13 +42,15 @@
 * DELET
 * * /pokemons/#id 
 
-        will delet the mentiond pokemon's profile
+        to delete the mentiond pokemon's profile
         
 ----------------
 ## TEST DERIVEN DEVELOPMENT 
  The controller is tried to be developed based on unit testing using RSPEC.
- you may find the test file at
-
+ here is the test file:
  ./spec/requests/status_spec.rb
+
+ There is also a small test on Pokemon Model to check the validation of data:
+ ./spec/requests/pokemon_model_spec.rb
 
  ------------------
