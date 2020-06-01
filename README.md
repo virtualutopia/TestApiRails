@@ -83,3 +83,7 @@ There are other considerations needs to be applied. But I ignore it for the mome
 
 - Using more gems
         Gems provide more option and somethimes less coding how ever i tried to keep it simple. for example it is also possible to handle the pagination using **kaminari** gem.
+
+- Auto Deploy
+
+        for the moment the app needs to be deployed manually after each push on github. however it is possible to activate an automated deployment using webhooks.
