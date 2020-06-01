@@ -38,7 +38,15 @@ That is how you may use each of the CRUD requests:
       
        http://35.182.117.245/pokemons/#id
        to delete the mentioned pokemon's profile
-      
+#
+* response body structure
+       
+       It consists of four parts
+       - status
+       - message
+       - data
+       - error (Just in case of having error)
+
 * Paginated response
       
        http://35.182.117.245/pokemons
@@ -53,6 +61,8 @@ That is how you may use each of the CRUD requests:
  
         another example of including both pagination formatting and filtering:
         http://35.182.117.245/pokemons?offset=10&limit=10&Type1=Grass
+
+
 ----------------
 ## TEST DRIVEN DEVELOPMENT
 The controller is developed and refactored based on implementing unit tests using RSPEC.
@@ -77,6 +87,15 @@ There are other considerations needs to be applied. But I ignore it for the mome
 
          It is neccessary for the security reason to activate https port and communicate through it. I can do that via server firewall setting or by using services like [CloudFlare](https://www.cloudflare.com/).
          https://www.cloudflare.com 
+         
+- More unit tests
+
+       Add more tests on each request block to cover all possible origin of errors
+
+- Validite all pokemons attribute
+
+       Validate inputs structure/type in the Pokemon.rb, at least for "legend" which must to be a false/true.
+
 - User Authentication
         
         It would be more secure to add a authentication procedure to limit the access to the API
