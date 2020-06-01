@@ -87,12 +87,12 @@ There are other considerations needs to be applied. But I ignore it for the mome
 
          It is neccessary for the security reason to activate https port and communicate through it. I can do that via server firewall setting or by using services like [CloudFlare](https://www.cloudflare.com/).
          https://www.cloudflare.com 
-         
+
 - More unit tests
 
        Add more tests on each request block to cover all possible origin of errors
 
-- Validite all pokemons attribute
+- Validate all pokemons attributes
 
        Validate inputs structure/type in the Pokemon.rb, at least for "legend" which must to be a false/true.
 
