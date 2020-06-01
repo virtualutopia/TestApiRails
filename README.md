@@ -71,7 +71,7 @@ There is also a small test on Pokemon Model to check the validation of data:
 
 ------------------
  
-# # Next steps
+# # Way to go
 There are other considerations needs to be applied. But I ignore it for the moment due to lack of time and also some technical issues with my old laptop. Here I mention some of them:
 - SSL 
 
@@ -81,8 +81,9 @@ There are other considerations needs to be applied. But I ignore it for the mome
         
         It would be more secure to add a authentication procedure to limit the access to the API
 
-- Using more gems
-        Gems provide more option and somethimes less coding how ever i tried to keep it simple. for example it is also possible to handle the pagination using **kaminari** gem.
+- Employ more gems
+
+        Gems provide more option and somethimes less coding how ever i tried to keep it simple. for example it is also possible to handle the pagination using "kaminari" gem.
 
 - Auto Deploy
 
