@@ -3,4 +3,10 @@ Rails.application.routes.draw do
   resources :pokemons
   
   get('list' => 'pokemons#list')
+
+  namespace 'api' do
+    namespace 'v1' do
+      get('test' => 'test#index')
+    end
+  end
 end
