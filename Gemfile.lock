@@ -106,7 +106,7 @@ GEM
       byebug (~> 11.0)
       pry (~> 0.13.0)
     puma (3.12.6)
-    rack (2.2.2)
+    rack (2.2.6.2)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (5.2.4.3)
@@ -181,10 +181,9 @@ GEM
     thread_safe (0.3.6)
     tzinfo (1.2.7)
       thread_safe (~> 0.1)
-  #  websocket-driver (0.7.2)
- #     websocket-extensions (>= 0.1.0)
-#    websocket-extensions (0.1.4)
-gem "websocket-extensions", ">= 0.1.5"
+    websocket-driver (0.7.5)
+      websocket-extensions (>= 0.1.0)
+    websocket-extensions (0.1.5)
 
 PLATFORMS
   ruby
